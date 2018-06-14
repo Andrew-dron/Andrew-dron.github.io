@@ -15,20 +15,22 @@
 <!-- Mirrored from www.mariasharapova.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 May 2018 16:02:29 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-	<title data-orig="Maria Sharapova Official Website">Контакты</title>
+	<title data-orig="Maria Sharapova Official Website">Главная</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="ОПИСАНИЕ" />
 
 	<meta name="description"  content="МЕТА ОПИСАНИЕ" />
 
 	<meta name="keywords"  content="КЛЮЧЕВЫЕ СЛОВА" />
+	<link href="https://fonts.googleapis.com/css?family=Caveat&amp;subset=cyrillic" rel="stylesheet">
 
-
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="css/hamburgers.css" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/preload.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 
 	<!-- ФАВИКОН -->
@@ -36,47 +38,103 @@
 </head>
 
 <header>
-
+	
 	<div class="logo-name">
 		<a href="index.html">
-			<img src="images/Logo_Png.png" alt="">
-			КРАВЦОВА
+			<img src="images/logo.png" alt="">
+			<p class="name">КРАВЦОВА</p>
 		</a>
 
 	</div>
 
-	<div class="dropdown">
+		
 
-		<button class="btn btn-primary dropdown-toggle menubtn" type="button" data-toggle="dropdown"> <img src="images/menu-alt-256.png"> <br> МЕНЮ</button>
-		<div class="dropdown-menu dropdown-menu-right dpr">
-			<ul class="">
+
+<div class="dropdown">
+		
+		<button class="btn btn-primary dropdown-toggle menubtn" type="button" data-toggle="dropdown"> <div id="nav-icon4">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<p id="status">MENU</p></button>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+			var p = document.getElementsByTagName('p')[0];
+			n=0
+			$('.menubtn').click(function(){
+				$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+
+			if (n==0){
+				p.innerHTML = p.innerHTML.replace(/MENU/,'CLOSE');
+				n = n+1;
+				$('.menu-dva').animate({
+ 
+            left: '200px'
+           
+ 
+        }, 200);
+			}
+			else{
+					p.innerHTML = p.innerHTML.replace(/CLOSE/,'MENU');
+					n= n-1;
+					$('.menu-dva').animate({ 
+ 
+            left: '0px'
+            
+ 
+        }, 200);
+
+				}
+				});
+
+		});</script>
+		
+	</div>
+
+		<div class="social">
+			<a href="https://www.youtube.com/user/6622993" target="_blank"><i class="fa fa-youtube-square socico-y" style="color: red !important"></i></a>
+			<a href="https://www.instagram.com/okravtsova8/" " target="_blank" ><i class="fa fa-instagram socico" ></i>
+			</a>
+		</div>
+		<div class="syteby">
+			<a href="http://www.landingnazakaz.ru/" class="landingnazakaz" target="_blank">Site by landingnazakaz</a>
+		</div>
+		<div class="slide">
+			<h4 style="text-align: center; font-size: 15px; padding: 20px; color: #aea7bc ;">Партнеры:</h4></div>
+		<div class="slideshoww">
+			<div id="slideshow">
+				<a href="http://skate-ice.ru/"><img src="images/sponsors/skate-ice.png" target="_blank"></a>
+				<a href="http://longboard-shop.ru/"><img src="images/sponsors/long-board.png" target="_blank"></a>
+				<a href="https://gyromarket.ru/"><img src="images/sponsors/gyro-market.png" target="_blank"></a>
+			</div>
+		</div>
+		
+</header>
+
+<body>
+		<div class="menu-dva">
+			<ul class=punkts>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</div>
-	</div>
+	<script type="text/javascript">
+  $(function () {
+    $('.menu-dva li a').each(function () {
+        var location = window.location.href 
+        var link = this.href
+        var result = location.match(link);
+        if(result != null) {
+            $(this).addClass('active');
+        }
+    });
+});
+</script>
 
-	<div class="social">
-		<a href="https://www.youtube.com/user/6622993" target="_blank"><i class="fa fa-youtube-square socico"></i></a>
-		<a href="https://www.instagram.com/okravtsova8/" target="_blank" ><i class="fa fa-instagram socico"></i>
-		</a>
-	</div>
-	<div class="syteby">
-		<a href="http://www.landingnazakaz.ru/" class="landingnazakaz" target="_blank">Site by landingnazakaz</a>
-	</div>
-	<div class="slide">
-		<h4 style="text-align: center; font-size: 15px; padding: 20px; color: #aea7bc ;">Партнеры:</h4>
-		<div id="slideshow">
-			<a href="http://skate-ice.ru/"><img src="images/sponsors/skate-ice.png" target="_blank"></a>
-			<a href="http://longboard-shop.ru/"><img src="images/sponsors/long-board.png" target="_blank"></a>
-			<a href="https://gyromarket.ru/"><img src="images/sponsors/gyro-market.png" target="_blank"></a>
-		</div>
-	</div>
 
-</header>
-
-<body>
-		<div class="container col-md-offset-1">
+		<div class="container ">
 			<div class="map">
 				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A51550c1d357bc0e957f8ab3890ce85fc6ef1208271a0088ae59701ee2288469d&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
 			</div>
@@ -84,13 +142,11 @@
 		<div class="contacts col-md-offset-1">
 
 			<div class=" con ">
-				<a class="logocon" href=""><img  src="images/tennis_PNG10405.png"></a>
-				<h3>Время работы:</h3>
-				<p>Ежедневно с 8:00-21:00</p>
-				<h3>ООО "ХХХ":</h3>
-				<p>Адрес г.Москва, ул.Мосевоская, д.1</p>
-				<h3>Сввязаться с нами:</h3>
-				<a href="tel: 89999999999">8(999)999-99-99</a>
+				<a class="logocon" href=""><img  src="images/logo.png"></a>
+				<h3>Телефон:</h3>
+				<a href="tel: 89999999999">8 (929) 999-64-06</a><br>
+				<h3>Электронная почта:</h3>
+				<a href="mailto:1sila@inbox.ru">1sila@inbox.ru</a> 
 			</div>
 
 </body>
